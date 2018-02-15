@@ -1,0 +1,20 @@
+{
+  "name": "node-dict",
+  "version": "1.0.0",
+  "description": "Find combination words from dictionary",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1"
+  }
+}
