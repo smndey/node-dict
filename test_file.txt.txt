@@ -7,4 +7,3 @@ Chicken
 Post
 Paper
 Postman
-Lotterycar
