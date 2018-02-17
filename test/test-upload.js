@@ -13,7 +13,7 @@ describe('Read line by line from file and combined two string combination and re
       headers:
         {
           'cache-control': 'no-cache',
-          'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW'
+          'content-type': 'multipart/form-data'
         },
       formData:
         {
