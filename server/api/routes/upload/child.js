@@ -17,16 +17,19 @@ process.on('message', (path) => {
       if (index === newArr.length) {
         return;
       }
-      for (let i = index; count = newArr.length, i < count; i++) {
-        combinedArr.push(newArr[i]+newArr[index]);
-        combinedArr.push(newArr[index]+newArr[i]);
-        loop(index + 1);
+      for (let i = 0; count = newArr.length, i < count; i++) {
+        if (newArr[index] !== newArr[i]) {
+          if (newArr[i].startsWith(newArr[index])) {
+            combinedArr.push(newArr[i]);
+          }
+        }
       }
+      loop(index + 1);
     }
     loop(0);
     let response = newArr.filter(word => {
       return combinedArr.indexOf(word) > -1;
     });
-    process.send(combinedArr);
+    process.send(response);
   });
 });
